@@ -20,17 +20,17 @@
 .container__img {
     padding: 1em;
 }
-.lista-menu {
+.list-menu {
     display: none;
     position: absolute;
     top: 100%;
     width: 60vw; /* Relative to 1% of the width of the viewport* */
 }
-.container__botao:checked ~ .lista-menu {
+.container__button:checked ~ .list-menu {
     display: block;
 }
 
-.lista-menu__item, 
+.list-menu__item, 
 .lista-menu__titulo {
     z-index: 999;
     padding: 1em;
@@ -48,21 +48,21 @@
   text-transform: uppercase;
 }
 
-.container__botao,
-.opcoes,
+.container__button,
+.options,
 .container__text,
 .container__titulo {
   display:none;
 }
-.lista-menu__item:hover { 
+.list-menu__item:hover { 
   color: var(--color-white);
   background: var(--color-blue-degrade);
 }
 
-.container__botao:checked ~ .container__label > .cabecalho__menu-hamburguer {
+.container__button:checked ~ .container__label > .cabecalho__menu-hamburguer {
   background-image: url("../images/Menu\ Aberto.png");
 }
-.container__botao:checked ~ .container__label  {
+.container__button:checked ~ .container__label  {
   background: var(--color-blue-degrade);
 }
 
@@ -85,7 +85,7 @@
   .container__titulo-negrito {
     font-weight: 700;
   }
-  .opcoes {
+  .options {
     display:flex;
   }
   .opcoes__link {
@@ -99,12 +99,12 @@
   .options__button {
     display:  none;
   }  
-  .options__button:checked ~ .lista-menu {
+  .options__button:checked ~ .list-menu {
    display: block; 
    width: auto;
   }  
 
-  .options__button:checked ~ .opcoes__item {
+  .options__button:checked ~ .options__item {
     padding: 1em 1em;
   }
   .options__button:checked ~ .container__label  {
@@ -125,7 +125,7 @@
   .cabecalho {
     padding: 0 2em;
   }
-  .opcoes {
+  .options {
     margin-left: 2em;
     margin-right: auto;
   }
