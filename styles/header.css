@@ -1,0 +1,135 @@
+.cabecalho__menu-hamburguer {
+    width: 24px;
+    height: 24px;
+    background-image:  url("../images/app-menu-hamburguer.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    display: inline-block;
+}
+.cabecalho {
+    display: flex;
+    justify-content: space-between;
+    background-color: var(--color-white);
+    align-items: center;
+    position:relative;
+}
+.container{
+    display: flex;
+    align-items: center;
+}
+.container__img {
+    padding: 1em;
+}
+.lista-menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    width: 60vw; /* Relative to 1% of the width of the viewport* */
+}
+.container__botao:checked ~ .lista-menu {
+    display: block;
+}
+
+.lista-menu__item, 
+.lista-menu__titulo {
+    z-index: 999;
+    padding: 1em;
+    background-color: var(--color-white);
+}
+.lista-menu__titulo { 
+    color: var(--color-orange);
+    font-weight: 700;
+}
+.lista-menu__link {
+  background: var(--color-blue-degrade);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-transform: uppercase;
+}
+
+.container__botao,
+.opcoes,
+.container__text,
+.container__titulo {
+  display:none;
+}
+.lista-menu__item:hover { 
+  color: var(--color-white);
+  background: var(--color-blue-degrade);
+}
+
+.container__botao:checked ~ .container__label > .cabecalho__menu-hamburguer {
+  background-image: url("../images/Menu\ Aberto.png");
+}
+.container__botao:checked ~ .container__label  {
+  background: var(--color-blue-degrade);
+}
+
+.lista-menu__link:hover {
+  -webkit-text-fill-color: var(--color-white);
+;
+}
+
+
+@media screen and (min-width: 820px) {
+  .container__titulo, 
+  .container__titulo-negrito {
+    display: inline;
+    font-family: var(--font-title), 'verdana';
+    font-size: 32px;
+  }
+  .container__titulo {
+    font-weight: 30;
+  } 
+  .container__titulo-negrito {
+    font-weight: 700;
+  }
+  .opcoes {
+    display:flex;
+  }
+  .opcoes__link {
+    padding: 1em;
+    text-decoration: none;
+    color: var(--color-black);
+  }
+  .cabecalho__menu-hamburguer {
+    display:none;
+  }
+  .options__button {
+    display:  none;
+  }  
+  .options__button:checked ~ .lista-menu {
+   display: block; 
+   width: auto;
+  }  
+
+  .options__button:checked ~ .opcoes__item {
+    padding: 1em 1em;
+  }
+  .options__button:checked ~ .container__label  {
+    background: var(--color-blue-degrade);
+    color: var(--color-white);
+    padding: 1em 1em;
+  }
+
+}
+
+@media screen and (min-width: 1024px) {
+  .container__link {
+    display: flex; 
+    align-items: center;
+    text-decoration: none;
+    color: var(--color-grey)
+  }
+  .cabecalho {
+    padding: 0 2em;
+  }
+  .opcoes {
+    margin-left: 2em;
+    margin-right: auto;
+  }
+  .container__text {
+    display:inline;
+  }
+} 
