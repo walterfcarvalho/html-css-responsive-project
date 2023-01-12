@@ -4,8 +4,8 @@
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=0.5, maximum-scale=3.5">
-  <title>ValterBooks</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=0.5, maximum-scale=2.5">
+  <title>BooksStore</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap">
@@ -18,31 +18,30 @@
 </head>
 
 <body>
-  <header class="cabecalho">
+  <header>
     <div class="container">
       <input type="checkbox" id="menu" class="container__button">
       <label for="menu" class="container__label">
-        <spam class="cabecalho__menu-hamburguer container__img "> </spam>
+        <spam class="header__menu-hamburguer container__img "> </spam>
       </label>
       <ul class="list-menu">
-        <li class="lista-menu__titulo">Categories</li>
+        <li class="list-menu__title">Categories</li>
         <li class="list-menu__item">
-          <a href="#" class="lista-menu__link">Coding</a>
+          <a href="#" class="list-menu__link">Coding</a>
         </li>
         <li class="list-menu__item">
-          <a href="#" class="lista-menu__link">Front-end</a>
+          <a href="#" class="list-menu__link">Front-end</a>
         </li>
         <li class="list-menu__item">
-          <a href="#" class="lista-menu__link">Infra</a>
+          <a href="#" class="list-menu__link">Infra</a>
         </li>
         <li class="list-menu__item">
-          <a href="#" class="lista-menu__link">Design</a>
+          <a href="#" class="list-menu__link">Design</a>
         </li>
       </ul>
       <img src="images/app-menu-logo-triangulo.png" alt="logo" class="container__img">
-      <h1 class="container__titulo"> <b class="container__titulo-negrito">Books</b>Store</h1class>
+      <h1 class="container__title"> <b class="container__title-bold">Books</b>Store</h1class>
     </div>
-
 
     <ul class="options">
       <input type="checkbox" class="options__button" id="options-menu" />
@@ -51,25 +50,22 @@
       </label>
       <ul class="list-menu">
         <li class="list-menu__item">
-          <a href="#" class="lista-menu__link">Coding</a>
+          <a href="#" class="list-menu__link">Coding</a>
         </li>
         <li class="list-menu__item">
-          <a href="#" class="lista-menu__link">Frontend</a>
+          <a href="#" class="list-menu__link">Frontend</a>
         </li>
         <li class="list-menu__item">
-          <a href="#" class="lista-menu__link">Infra</a>
+          <a href="#" class="list-menu__link">Infra</a>
         </li>
         <li class="list-menu__item">
-          <a href="#" class="lista-menu__link">Design</a>
+          <a href="#" class="list-menu__link">Design</a>
         </li>
       </ul>
       <li class="options__item"><a href="#" class="opcoes__link">Bookmarks</a></li>
       <li class="options__item"><a href="#" class="opcoes__link">My Books</a></l1>
     </ul>
     <div class="container">
-      <a href=#>
-        <img src="images/app-menu-heart.png" alt="bookmarks" class="container__img">
-      </a>
       <a href=# class="container__link">
         <img src="images/app-menu-bag.png" alt="bag" class="container__img">
         <p class="container__text">My Bag</p>
@@ -80,14 +76,16 @@
       </a>
       <div>
   </header>
+
   <section class="banner">
     <h2 class="banner__titulo">Already know where do you start?</h2>
     <p class="banner__texto">Find here what you need to evolve</p>
     <input type="search" class="banner__pesquisa" placeholder="What will be your next choice?" />
   </section>
-  <section class="carrosel">
-    <h2 class="carrosel__titulo"> Latest releases </h2>
-    <div class="carrossel__container">
+
+  <section class="carousel">
+    <h2 class="carousel__title"> Latest releases </h2>
+    <div class="carousel__container">
       <div class="swiper">
         <div class="swiper-pagination"></div>
         <div class="swiper-wrapper">
@@ -112,28 +110,29 @@
         <div class="swiper-scrollbar"></div>
       </div>
       <div class="card">
-        <div class="card__descricao">
-          <div class="descricao">
-            <h3 class="descricao__titulo">Maybe you like this...</h3>
-            <h2 class="descricao_titulo-livro">Angular 11 e firebase</h2>
-            <p class="descricao__texto">Buildind a integrated application with google plataform</p>
+        <div class="card__description">
+          <div class="description">
+            <h3 class="description__title">Maybe you like this...</h3>
+            <h2 class="description_title-book">Angular 11 e firebase</h2>
+            <p class="description__text">Buildind a integrated application with google plataform</p>
           </div>
-          <img src="images/Angular-1.png" class="descricao__imagem" />
+          <img src="images/Angular-1.png" class="image__description" />
         </div>
-        <div class="card__botoes">
-          <ul class="botoes">
-            <li class="botoes_item"> <img src="images/button-heart.svg" /> </li>
-            <li class="botoes_item"> <img src="images/button-bag.svg" /> </li>
+        <div class="card__buttons">
+          <ul class="buttons">
+            <li class="buttons_items"> <img src="images/button-heart.svg" /> </li>
+            <li class="buttons_items"> <img src="images/button-bag.svg" /> </li>
           </ul>
-          <a href="#" class="botoes__ancora">More...</a>
+          <a href="#" class="buttons__anchor">More...</a>
         </div>
       </div>
     </div>
     </div>
   </section>
-  <section class="carrosel">
-    <h2 class="carrosel__titulo"> Best sellers </h2>
-    <div class="carrossel__container"> 
+
+  <section class="carousel">
+    <h2 class="carousel__title"> Best sellers </h2>
+    <div class="carousel__container"> 
       <div class="swiper">
         <div class="swiper-pagination"></div>
         <div class="swiper-wrapper">
@@ -158,8 +157,8 @@
         <div class="swiper-scrollbar"></div>
       </div>
       <div class="card">
-        <div class="card__descricao">
-          <div class="descricao">
+        <div class="card__description">
+          <div class="description">
             <div class="card__description-starts">
               <img src="images/Star.svg" />
               <img src="images/Star.svg" />
@@ -167,129 +166,133 @@
               <img src="images/Star.svg" />
               <img src="images/Star.svg" />
             </div>
-            <h3 class="descricao__titulo">Author of the month</h3>
-            <h2 class="descricao_titulo-livro">Juliana Agaritov</h2>
-            <p class="descricao__texto">System analist, Juliana is espcialist in Front-End</p>
+            <h3 class="description__title">Author of the month</h3>
+            <h2 class="description_title-book">Juliana Agaritov</h2>
+            <p class="description__text">System analist, Juliana is espcialist in Front-End</p>
           </div>
-          <img src="images/Perfil-escritora 1-1.png" class="descricao__imagem" />
+          <img src="images/Perfil-escritora 1-1.png" class="image__description" />
         </div>
-        <div class="card__botoes">
-          <ul class="botoes">
-            <li class="botoes_item"> <img src="images/button-heart.svg" /> </li>
-            <li class="botoes_item"> <img src="images/button-bag.svg" /> </li>
+        <div class="card__buttons">
+          <ul class="buttons">
+            <li class="buttons_items"> <img src="images/button-heart.svg" /> </li>
+            <li class="buttons_items"> <img src="images/button-bag.svg" /> </li>
           </ul>
-          <a href="#" class="botoes__ancora">More...</a>
+          <a href="#" class="buttons__anchor">More...</a>
         </div>
       </div>
     </div>
   </section>
-  <section class="topicos">
-    <h2 class="topicos__titulo"> Frequent topics </h2>
-    <ul class="topicos__lista">
-      <li class="topicos__item">
-        <a href="#" class="topicos__link">Android</a>
+
+  <section class="topics">
+    <h2 class="topics__title"> Frequent topics </h2>
+    <ul class="topics__list">
+      <li class="topics__item">
+        <a href="#" class="topics__link">Android</a>
       </li>
-      <li class="topicos__item">
-        <a href="#" class="topicos__link">Ruby</a>
+      <li class="topics__item">
+        <a href="#" class="topics__link">Ruby</a>
       </li>
-      <li class="topicos__item">
-        <a href="#" class="topicos__link">Java</a>
+      <li class="topics__item">
+        <a href="#" class="topics__link">Java</a>
       </li>
-      <li class="topicos__item">
-        <a href="#" class="topicos__link">Marketing digital</a>
+      <li class="topics__item">
+        <a href="#" class="topics__link">Marketing digital</a>
       </li>
-      <li class="topicos__item">
-        <a href="#" class="topicos__link">Delphi7</a>
+      <li class="topics__item">
+        <a href="#" class="topics__link">Delphi7</a>
       </li>
-      <li class="topicos__item">
-        <a href="#" class="topicos__link">Html</a>
+      <li class="topics__item">
+        <a href="#" class="topics__link">Html</a>
       </li>
-      <li class="topicos__item">
-        <a href="#" class="topicos__link">Sql Server</a>
+      <li class="topics__item">
+        <a href="#" class="topics__link">Sql Server</a>
       </li>
     </ul>
   </section>
-  <section class="contato">
-    <div class="contato__descricao">
-      <h2 class="contato__titulo">Get our newsletter</h2>
-      <p class="contato__texto">New Ebooks, books deals and more.</p>
+
+  <section class="contact">
+    <div class="contact__description">
+      <h2 class="contact__title">Get our newsletter</h2>
+      <p class="contact__text">New Ebooks, books deals and more.</p>
     </div>
-    <input class="contato__email" type="email" placeholder="Type your email" />
+    <input class="contact__email" type="email" placeholder="Type your email" />
   </section>
+  
   <hr />
+
   <footer>
     <h2 class="footer__title">Alura Group</h2>
-    <ul class="lista-rodape">
-      <li class="lista-rodape__title">Education</li>
-      <li class="lista-rodape__item">
+    <ul class="list-footer">
+      <li class="list-footer__title">Education</li>
+      <li class="list-footer__item">
         <img src="images/CasaDoCodigo.png" alt="Logo Casa do código" />
-        <a href="#" class="lista-rodape__link">House of code</a>
+        <a href="#" class="list-footer__link">House of code</a>
       </li>
-      <li class="lista-rodape__item">
+      <li class="list-footer__item">
         <img src="images/Caelum.png" alt="logo caelum" />
-        <a href="#" class="lista-rodape__link">Caelum</a>
+        <a href="#" class="list-footer__link">Caelum</a>
       </li>
     </ul>
-    <ul class="lista-rodape">
-      <li class="lista-rodape__title">Online education</li>
-      <li class="lista-rodape__item">
+    <ul class="list-footer">
+      <li class="list-footer__title">Online education</li>
+      <li class="list-footer__item">
         <img src="images/Alura.png" alt="Alura" />
-        <a href="#" class="lista-rodape__link">Alura</a>
+        <a href="#" class="list-footer__link">Alura</a>
       </li>
-      <li class="lista-rodape__item">
+      <li class="list-footer__item">
         <img src="images/AluraEmpresas.png" alt="Logo Alura para empresas" />
-        <a href="#" class="lista-rodape__link">Alura for companies</a>
+        <a href="#" class="list-footer__link">Alura for companies</a>
       </li>
-      <li class="lista-rodape__item">
+      <li class="list-footer__item">
         <img src="images/AluraLatam.png" alt="Logo Alura LATAM" />
-        <a href="#" class="lista-rodape__link">Alura LATAM</a>
+        <a href="#" class="list-footer__link">Alura LATAM</a>
       </li>
-      <li class="lista-rodape__item">
+      <li class="list-footer__item">
         <img src="images/AluraStart.png" alt="Logo Alura Start" />
-        <a href="#" class="lista-rodape__link">Alura Start</a>
+        <a href="#" class="list-footer__link">Alura Start</a>
       </li>
-      <li class="lista-rodape__item">
+      <li class="list-footer__item">
         <img src="images/MusicDot.png" alt="Logo music dot" />
-        <a href="#" class="lista-rodape__link">Music Dot</a>
+        <a href="#" class="list-footer__link">Music Dot</a>
       </li>
-      <li class="lista-rodape__item">
+      <li class="list-footer__item">
         <img src="images/AluraLingua.png" alt="Logo alura lingua" />
-        <a href="#" class="lista-rodape__link">Alura languages</a>
+        <a href="#" class="list-footer__link">Alura languages</a>
       </li>
-      <li class="lista-rodape__item">
+      <li class="list-footer__item">
         <img src="images/PM3.png" alt="Logo PM3" />
-        <a href="#" class="lista-rodape__link">PM3</a>
+        <a href="#" class="list-footer__link">PM3</a>
       </li>
     </ul>
-    <ul class="lista-rodape">
-      <li class="lista-rodape__title">Community</li>
-      <li class="lista-rodape__item">
+    <ul class="list-footer">
+      <li class="list-footer__title">Community</li>
+      <li class="list-footer__item">
         <img src="images/HipstersTech.png" alt="Logo Hipsters dot tech" />
-        <a href="#" class="lista-rodape__link">Hipsters dot tech</a>
+        <a href="#" class="list-footer__link">Hipsters dot tech</a>
       </li>
-      <li class="lista-rodape__item">
+      <li class="list-footer__item">
         <img src="images/Scuba.png" alt="logo ScubaDev" />
-        <a href="#" class="lista-rodape__link">Scuba Dev</a>
+        <a href="#" class="list-footer__link">Scuba Dev</a>
       </li>
-      <li class="lista-rodape__item">
+      <li class="list-footer__item">
         <img src="images/Layers.png" alt="logo Layers ponto tech" />
-        <a href="#" class="lista-rodape__link">Layers dot tech</a>
+        <a href="#" class="list-footer__link">Layers dot tech</a>
       </li>
-      <li class="lista-rodape__item">
+      <li class="list-footer__item">
         <img src="images/LikeABoss.png" alt="logo Like a Boss" />
-        <a href="#" class="lista-rodape__link"> Like a Boss</a>
+        <a href="#" class="list-footer__link"> Like a Boss</a>
       </li>
-      <li class="lista-rodape__item">
+      <li class="list-footer__item">
         <img src="images/CarreiraSemFronteira.png" alt="logo carreira sem fronteira" />
-        <a href="#" class="lista-rodape__link">Carreer with no frontiers</a>
+        <a href="#" class="list-footer__link">Carreer with no frontiers</a>
       </li>
-      <li class="lista-rodape__item">
+      <li class="list-footer__item">
         <img src="images/HipstersJobs.png" alt="logo hipsters ponto jobs" />
-        <a href="#" class="lista-rodape__link">Hipsters dot Jobs</a>
+        <a href="#" class="list-footer__link">Hipsters dot Jobs</a>
       </li>
-      <li class="lista-rodape__item">
+      <li class="list-footer__item">
         <img src="images/GUJ.png" alt="logo GUJ" />
-        <a href="#" class="lista-rodape__link">GUJ</a>
+        <a href="#" class="list-footer__link">GUJ</a>
       </li>
     </ul>
   </footer>

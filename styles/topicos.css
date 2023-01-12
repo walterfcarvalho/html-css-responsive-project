@@ -1,31 +1,36 @@
-.topicos {
+.topics {
   background: var(--color-blue-degrade);
   text-align: center;
   padding: 0.5em;
 }
-.topicos__titulo {
+
+.topics__title {
   color: var(--color-white);
   font-size: 16px;
 }
-.topicos__lista {
-  display:flex;
+
+.topics__list {
+  display: flex;
   flex-wrap: wrap;
   justify-content: center;
 }
-.topicos__item {
+
+.topics__item {
   margin: 2em 0.5em;
 }
-.topicos__link {
+
+.topics__link {
   color: var(--color-white);
   padding: 1em;
   background-color: var(--color-orange);
 }
 
 @media screen and (min-width:1024px) {
-   .topicos__titulo {
-    font-size: 24px ;
+  .topics__title {
+    font-size: 24px;
   }
-  .topicos__lista {
+
+  .topics__list {
     padding: 2em 30vw;
   }
 }
